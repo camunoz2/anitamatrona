@@ -1,5 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import logo from "../assets/logo.png"
+import HamburgerIcon from "../components/hamburger-icon"
 
 const Navbar = () => {
   return (
@@ -7,16 +10,25 @@ const Navbar = () => {
       <div>
         <img src={logo} alt="logo" className="w-24" />
       </div>
-      <ul className="flex space-around items-center">
-        <div className="px-2">inicio</div>
-        <div className="px-2">sobre mi</div>
-        <div className="px-2">servicios</div>
+      <ul className="hidden sm:flex space-around items-center">
+        <div className="px-2">
+          <Link to="/">inicio</Link>
+        </div>
+        <div className="px-2">
+          <Link to="./sobre-mi">sobre mi</Link>
+        </div>
+        <div className="px-2">
+          <Link to="./servicios">servicios</Link>
+        </div>
         <div className="px-2">talleres</div>
         <div className="px-2">blog</div>
         <div className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline">
           contacto
         </div>
       </ul>
+      <button className="p-2 sm:hidden">
+        <HamburgerIcon />
+      </button>
     </nav>
   )
 }
