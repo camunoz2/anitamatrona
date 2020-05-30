@@ -6,8 +6,6 @@ import About from "../components/about"
 import Services from "../components/services"
 import Workshops from "../components/workshops"
 import LastInstaPost from "../components/lastinsta-post"
-import GoUp from "../components/go-up"
-import Footer from "../components/footer.js"
 
 const Index = () => {
   const gatsbyInstaPostData = useStaticQuery(graphql`
@@ -30,12 +28,8 @@ const Index = () => {
         <About />
         <Services />
         <Workshops />
+        <LastInstaPost img={lastPostImg} caption={lastPostCaption} />
       </Layout>
-      <LastInstaPost img={lastPostImg} caption={lastPostCaption} />
-      <div className="container mx-auto">
-        <GoUp />
-      </div>
-      <Footer />
     </>
   )
 }

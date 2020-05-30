@@ -22,9 +22,12 @@ const Navbar = () => {
         </div>
         <div className="px-2">talleres</div>
         <div className="px-2">blog</div>
-        <div className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline">
-          contacto
-        </div>
+        <a
+          href="https://wa.me/56992391139"
+          className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline"
+        >
+          whatsapp
+        </a>
       </ul>
       <button className="p-2 sm:hidden">
         <HamburgerIcon />
