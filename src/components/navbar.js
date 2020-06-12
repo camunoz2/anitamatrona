@@ -15,13 +15,14 @@ const Navbar = () => {
           <Link to="/">inicio</Link>
         </div>
         <div className="px-2">
-          <Link to="./sobre-mi">sobre mi</Link>
+          <Link to="/sobre-mi">sobre mi</Link>
         </div>
         <div className="px-2">
-          <Link to="./servicios">servicios</Link>
+          <Link to="/servicios">servicios</Link>
         </div>
-        <div className="px-2">talleres</div>
-        <div className="px-2">blog</div>
+        <div className="px-2">
+          <Link to="/taller">proximo taller</Link>
+        </div>
         <a
           href="https://wa.me/56992391139"
           className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline"
