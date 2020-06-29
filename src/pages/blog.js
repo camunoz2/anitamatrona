@@ -11,6 +11,9 @@ const Blog = () => {
           caption
           media_url
           id
+          permalink
+          thumbnail_url
+          media_type
         }
       }
       paging {
@@ -35,6 +38,9 @@ const Blog = () => {
               key={post.id}
               image={post.media_url}
               body={post.caption}
+              postUrl={post.permalink}
+              videoThumbnail={post.thumbnail_url}
+              mediaType={post.media_type}
             />
           )
         })}
