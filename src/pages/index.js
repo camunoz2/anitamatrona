@@ -24,7 +24,7 @@ const Index = () => {
 
   return (
     <>
-      <Layout showImage={true} headerTitle="hola!">
+      <Layout showImage={true} headerTitle="Hola">
         <About />
         <Services />
         <Workshops />

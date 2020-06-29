@@ -1,16 +1,9 @@
 import React from "react"
 import bg from "../assets/bg.png"
-import LineSVG from "../components/svgs/lineSVG"
 
 const Header = ({ title, showImage }) => {
   return (
     <div className="flex flex-col items-center p-16">
-      <div className="absolute -ml-64">
-        <LineSVG />
-      </div>
-      <div className="absolute -ml-32">
-        <LineSVG />
-      </div>
       <img
         className={`${showImage ? "" : "hidden"}`}
         src={bg}

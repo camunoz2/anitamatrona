@@ -6,9 +6,9 @@ const SobreMi = () => {
   const Paragraph = ({ children }) => <p className="mb-4">{children}</p>
 
   return (
-    <Layout showImage={false} headerTitle="sobre mi!">
+    <Layout showImage={false} headerTitle="Sobre Mi">
       <div className="overflow-hidden w-1/2 mx-auto">
-        <img src={image} alt="sobre mi" />
+        <img src={image} alt="Sobre Mi" />
       </div>
       <div className="text-md md:text-xl mt-32 w-3/4 mx-auto">
         <Paragraph>

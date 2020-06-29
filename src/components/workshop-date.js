@@ -1,24 +1,17 @@
 import React from "react"
 
-const WorkshopDate = () => {
+const WorkshopDate = ({ date, name, workshopStatus }) => {
   return (
-    <div className="flex">
-      <div className="flex flex-col items-end justify-center py-2 mr-4">
-        <div>
-          <h2 className="font-extrabold text-md lg:text-3xl leading-none text-gray-700 text-right">
-            21 de Marzo
-          </h2>
-          <p className="font-light text-sm text-gray-700 text-right">
-            Taller de preparacion al parto
-          </p>
-        </div>
+    <div className="grid grid-cols-2 gap-1 border">
+      <div className="flex flex-col justify-center p-4">
+        <h2 className="font-extrabold text-md lg:text-3xl leading-none text-gray-700">
+          {date}
+        </h2>
+        <p className="font-light text-sm text-gray-700">{name}</p>
       </div>
-
-      <div className="flex items-center justify-center md:justify-start">
-        <p className="text-center font-extrabold text-white text-3xl px-4 py-2 bg-green-500">
-          Listo
-        </p>
-      </div>
+      <p className="flex items-center justify-center font-extrabold text-white text-3xl bg-green-500">
+        {workshopStatus}
+      </p>
     </div>
   )
 }

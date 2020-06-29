@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import MenuItem from "./menu-item"
 
 import logo from "../assets/logo.png"
 import HamburgerIcon from "../components/hamburger-icon"
@@ -11,18 +12,11 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-24" />
       </div>
       <ul className="hidden sm:flex space-around items-center">
-        <div className="px-2">
-          <Link to="/">inicio</Link>
-        </div>
-        <div className="px-2">
-          <Link to="/sobre-mi">sobre mi</Link>
-        </div>
-        <div className="px-2">
-          <Link to="/servicios">servicios</Link>
-        </div>
-        <div className="px-2">
-          <Link to="/taller">proximo taller</Link>
-        </div>
+        <MenuItem text="Inicio" linkTo="/" />
+        <MenuItem text="Blog" linkTo="/blog" />
+        <MenuItem text="Sobre Mi" linkTo="/sobre-mi" />
+        <MenuItem text="Talleres" linkTo="/todos-talleres" />
+        <MenuItem text="Proximo Taller" linkTo="/taller" />
         <a
           href="https://wa.me/56992391139"
           className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline"

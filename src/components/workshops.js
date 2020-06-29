@@ -1,5 +1,4 @@
 import React from "react"
-import workshopImg from "../assets/workshop_bg.png"
 import WorkshopDate from "./workshop-date"
 
 const Workshops = () => {
@@ -7,22 +6,46 @@ const Workshops = () => {
     <div className="my-10">
       <h2 className="text-4xl font-thin text-purple-700 text-center my-10">
         Los <span className="font-extrabold">talleres</span> que estoy
-        realizando durante <span className="font-extrabold">todo el año!</span>{" "}
+        realizando durante{" "}
+        <span className="font-extrabold">todo el año! 2020</span>
         😍
       </h2>
-      <div className="flex justify-center">
-        <img
-          src={workshopImg}
-          alt="talleres"
-          className="hidden md:block md:col-span-6 pr-4 h-64"
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <WorkshopDate
+          name="Preparacion al Parto"
+          date="22 Feb"
+          workshopStatus="Listo"
         />
-
-        <div className="flex flex-col h-64">
-          <WorkshopDate />
-          <WorkshopDate />
-          <WorkshopDate />
-          <WorkshopDate />
-        </div>
+        <WorkshopDate
+          name="Preparación al Parto"
+          date="2 May"
+          workshopStatus="Listo"
+        />
+        <WorkshopDate
+          name="Preparación al Post-Parto"
+          date="16 May"
+          workshopStatus="Listo"
+        />
+        <WorkshopDate
+          name="Preparación al Parto"
+          date="6 Jun"
+          workshopStatus="Listo"
+        />
+        <WorkshopDate
+          name="Preparación al Post-Parto"
+          date="13 Jun"
+          workshopStatus="Listo"
+        />
+        <WorkshopDate
+          name="Preparación al Post-Parto"
+          date="27 Jun"
+          workshopStatus="Listo"
+        />
+        <WorkshopDate
+          name="Preparación al Post-Parto"
+          date="4 Jul"
+          workshopStatus="Se viene!"
+        />
       </div>
     </div>
   )

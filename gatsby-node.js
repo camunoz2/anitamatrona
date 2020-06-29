@@ -5,7 +5,7 @@ exports.sourceNodes = async ({
 }) => {
   // get data from Instagram API at build time
   const result = await fetch(
-    `https://graph.instagram.com/me/media?fields=caption,media_type,media_url,timestamp,thumbnail_url,permalink&access_token=IGQVJYQUhSR045V19CNjZApVlpfTm1EVTZADeVFvVE9UWC1lbWpKQWplSlVOZAnk4bnZAkSTlTSXhDZA2dtblRqZAlJ0ZAi1wUUJBaU5WSEN6ZAmNHczNXNndvZAkV3bzNMZAWRRSzhaYU4weHZAR`
+    `https://graph.instagram.com/me/media?fields=caption,media_type,media_url,timestamp,thumbnail_url,permalink&access_token=IGQVJXQUhCcnJQZAGNxRlI5RDlVcnhxdmFiZAUJhcTlSS0pQWWxQWm1nNXNuTFgxZAkRISGRtRTI2ME9ZAVFhESWhkemc1ZAmpfbl9Eb1hpSm56dXRFT00wMlhGZA0pUVmdWSzI2ZA1otTnlhdm5nc1JsdWkxXwZDZD`
   )
   const resultData = await result.json()
 
