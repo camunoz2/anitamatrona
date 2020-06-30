@@ -9,7 +9,7 @@ const Header = ({ title, showImage }) => {
         src={bg}
         alt="matrona anita ana maria barrientos"
       />
-      <h2 className="text-6xl font-black text-gradient -m-16">
+      <h2 className="text-5xl font-black text-gradient text-center">
         {title ? title : "holasss!"}
       </h2>
     </div>

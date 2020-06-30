@@ -3,12 +3,14 @@ import Layout from "../components/layout"
 
 const TodosTalleres = () => {
   return (
-    <Layout headerTitle="Taller de preparacion al parto">
-      <div className="text-md md:text-xl mt-32 w-3/4 mx-auto">
-        <h2 className="font-bold mb-4">
+    <Layout headerTitle="Los talleres que podemos desarrollar durante el año">
+      <div className="text-md md:text-xl w-3/4 mx-auto font-light">
+        <h2 className="mb-4">
           Y la maternidad, la crianza, el gestar y parir, no son, ¿acaso
-          procesos propios de la naturaleza de la mujer? ¿Debemos o necesitamos
-          entonces, prepararnos para ellos?
+          procesos propios de la naturaleza de la mujer?{" "}
+          <span className="font-bold">
+            ¿Debemos o necesitamos entonces, prepararnos para ellos?
+          </span>
         </h2>
 
         <p className="mb-4">
@@ -36,9 +38,11 @@ const TodosTalleres = () => {
           personas que serán mis acompañantes.
         </p>
 
-        <h2 className="mb-4">Taller de Preparación al Post- Parto</h2>
+        <h2 className="font-bold text-2xl my-10">
+          Taller de Preparación al Post- Parto
+        </h2>
 
-        <h3 className="mb-4">¿Sabes que es el puerperio?</h3>
+        <h3 className="mb-4 text italic">¿Sabes que es el puerperio?</h3>
 
         <p className="mb-4">
           El puerperio es el periodo de tiempo que pasa desde que tu guagua
@@ -61,39 +65,43 @@ const TodosTalleres = () => {
           En términos más concretos nos enfocaremos en los siguientes temas:
         </p>
 
-        <ul>
-          <li>
+        <ul className="mb-4 grid grid-cols-1 gap-4 list-decimal">
+          <li className="pl-4">
             Situaciones importantes en el parto para vivir un puerperio sano e
             iniciar una lactancia materna exitosa (hablaremos de la fisiología
             del parto y como es de necesaria esta naturaleza para iniciar la
             crianza)
           </li>
 
-          <li>Comportamiento del recién nacido durante los primeros días</li>
-          <li>Cuidados de la Madre</li>
-          <li>Cuidados del Recién Nacido</li>
-          <li>Colecho</li>
-          <li>Alimentación del Recién Nacido, lactancia materna</li>
-          <li>Sexualidad en el puerperio</li>
-          <li>Relación de pareja</li>
+          <li className="pl-4">
+            Comportamiento del recién nacido durante los primeros días
+          </li>
+          <li className="pl-4">Cuidados de la Madre</li>
+          <li className="pl-4">Cuidados del Recién Nacido</li>
+          <li className="pl-4">Colecho</li>
+          <li className="pl-4">
+            Alimentación del Recién Nacido, lactancia materna
+          </li>
+          <li className="pl-4">Sexualidad en el puerperio</li>
+          <li className="pl-4">Relación de pareja</li>
         </ul>
 
-        <h3>Preparación al Parto</h3>
+        <h3 className="font-bold text-2xl my-10">Preparación al Parto</h3>
 
-        <p>
+        <p className="mb-4">
           El taller de preparación al post parto está pensado en padres que
           quieren recibir a su hij@ con un conocimiento base que les permita
           desenvolverse de forma satisfactoria y cómoda permitiendo el disfrute
           de esta etapa tan bonita.
         </p>
 
-        <p>
+        <p className="mb-4">
           Este taller ya dio resultado, estoy feliz por eso. Se preparó para las
           circunstancias actuales y tiene mucha dedicación puesta en cada uno de
           los temas a tratar. Con mucho entusiasmo te invito a prepararte.
         </p>
 
-        <p>
+        <p className="mb-4">
           El sólo hecho de prepararse para el parto, disminuye la ansiedad,
           inseguridad, disminuye los riesgos de intervenciones innecesarias (tu
           ya sabrás reconocerlos). Te permitirá incluso disminuir la intensidad
@@ -101,29 +109,34 @@ const TodosTalleres = () => {
           disminuir el miedo a lo desconocido.
         </p>
 
-        <p>Los temas a tratar son:</p>
+        <p className="mb-4">Los temas a tratar son:</p>
 
-        <ul>
-          <li>Gestación.</li>
-          <li>Trabajo de parto (etapas y fisiología).</li>
-          <li>Pelvis</li>
-          <li>Recomendaciones OMS, realidad local y actual por COVID-19.</li>
-          <li>Cuando consultar.</li>
-          <li>
+        <ul className="mb-4 grid grid-cols-1 gap-4 list-decimal">
+          <li className="pl-4">Gestación.</li>
+          <li className="pl-4">Trabajo de parto (etapas y fisiología).</li>
+          <li className="pl-4">Pelvis</li>
+          <li className="pl-4">
+            Recomendaciones OMS, realidad local y actual por COVID-19.
+          </li>
+          <li className="pl-4">Cuando consultar.</li>
+          <li className="pl-4">
             Manejo del dolor en el trabajo de parto y parto. (Herramientas)
           </li>
-          <li>Plan de parto.</li>
-          <li>Rol del acompañante.</li>
-          <li>Que es parto natural.</li>
-          <li>Biografía recomendada.</li>
-          <li>Vínculo madre e hij@</li>
+          <li className="pl-4">Plan de parto.</li>
+          <li className="pl-4">Rol del acompañante.</li>
+          <li className="pl-4">Que es parto natural.</li>
+          <li className="pl-4">Biografía recomendada.</li>
+          <li className="pl-4">Vínculo madre e hij@</li>
         </ul>
 
-        <div>
-          Sistema: Plataforma zoom Horario: designado según fecha Duración real:
-          3 horas Tiempo de preguntas: abierto Valor: $10000 Sorpresas y mucho
-          más.
-        </div>
+        <ul className="mb-4 grid grid-cols-1 gap-4">
+          <li className="pl-4">Sistema: Plataforma zoom </li>
+          <li className="pl-4">Horario: designado según fecha </li>
+          <li className="pl-4">Duración real: 3 horas </li>
+          <li className="pl-4">Tiempo de preguntas: abierto </li>
+          <li className="pl-4">Valor: $10000 </li>
+          <li className="pl-4">Sorpresas y mucho más.</li>
+        </ul>
       </div>
     </Layout>
   )
