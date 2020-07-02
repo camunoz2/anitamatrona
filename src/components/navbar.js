@@ -4,15 +4,16 @@ import MenuItems from "./menu-items"
 
 import logo from "../assets/logo.png"
 import HamburgerIcon from "../components/hamburger-icon"
+import { Link } from "gatsby"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
     <nav className="flex justify-between items-center mt-6">
-      <div>
+      <Link to="/">
         <img src={logo} alt="logo" className="w-24" />
-      </div>
+      </Link>
       {open && (
         <button
           className="absolute right-0 top-0 mr-10 py-10 z-10"

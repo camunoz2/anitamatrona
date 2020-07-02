@@ -14,6 +14,7 @@ const Index = () => {
         dataQuery {
           caption
           media_url
+          permalink
         }
       }
     }
@@ -21,6 +22,7 @@ const Index = () => {
 
   const lastPostCaption = gatsbyInstaPostData.post.dataQuery[0].caption
   const lastPostImg = gatsbyInstaPostData.post.dataQuery[0].media_url
+  const permalink = gatsbyInstaPostData.post.dataQuery[0].permalink
 
   return (
     <>
@@ -28,7 +30,11 @@ const Index = () => {
         <About />
         <Services />
         <Workshops />
-        <LastInstaPost img={lastPostImg} caption={lastPostCaption} />
+        <LastInstaPost
+          img={lastPostImg}
+          caption={lastPostCaption}
+          url={permalink}
+        />
       </Layout>
     </>
   )

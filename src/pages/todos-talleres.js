@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import PriceBox from "../components/price-box"
 
 import img01 from "../assets/pic_foot_baby.jpg"
+import img02 from "../assets/pic_baby_up.jpg"
+
+import taller01 from "../assets/_services/4-consulta-de-lactancia-materna.jpg"
 
 const TodosTalleres = () => {
   return (
@@ -96,7 +99,12 @@ const TodosTalleres = () => {
           body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online"
           name="Ana Maria Barrientos"
           date="24 de Marzo 2020"
+          img={taller01}
+          iconText="Hablemos por Whatsapp"
+          btnText="Inscribirse"
         />
+
+        <img className="w-full object-cover" src={img02} alt="baby foots" />
 
         <h3 className="font-bold text-2xl my-10">
           Taller de Preparación al Parto
@@ -148,6 +156,9 @@ const TodosTalleres = () => {
           body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online"
           name="Ana Maria Barrientos"
           date="24 de Marzo 2020"
+          img={taller01}
+          iconText="Hablemos por Whatsapp"
+          btnText="Inscribirse"
         />
       </div>
     </Layout>

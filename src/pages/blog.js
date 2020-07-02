@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import BlogPost from "../components/blog-post"
 import Layout from "../components/layout"
+import PriceBox from "../components/price-box"
 
 const Blog = () => {
   const gatsbyInstaPostData = useStaticQuery(graphql`
@@ -14,33 +14,39 @@ const Blog = () => {
           permalink
           thumbnail_url
           media_type
-        }
-      }
-      paging {
-        dataQuery {
-          next
-          cursors {
-            before
-            after
-          }
+          timestamp(formatString: "DD MMMM YYYY", locale: "es-CL")
         }
       }
     }
   `)
   const postQuery = gatsbyInstaPostData.post.dataQuery
 
+  const truncate = elem => {
+    if (!elem) return
+    else {
+      const titleArray = elem.split(" ")
+      const title = `${titleArray[0]} ${titleArray[1]}`
+      return title
+    }
+  }
+
   return (
     <Layout headerTitle="Desde instagram">
-      <div>
+      <div className="flex flex-col justify-around">
         {postQuery.map(post => {
           return (
-            <BlogPost
+            <PriceBox
               key={post.id}
-              image={post.media_url}
-              body={post.caption}
-              postUrl={post.permalink}
-              videoThumbnail={post.thumbnail_url}
-              mediaType={post.media_type}
+              name="Ana María Barrientos"
+              date={post.timestamp}
+              title={truncate(post.caption)}
+              btnText="Leer mas"
+              iconText={post.permalink}
+              img={
+                post.media_type === "VIDEO"
+                  ? post.thumbnail_url
+                  : post.media_url
+              }
             />
           )
         })}
