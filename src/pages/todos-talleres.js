@@ -1,5 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
+import PriceBox from "../components/price-box"
+
+import img01 from "../assets/pic_foot_baby.jpg"
 
 const TodosTalleres = () => {
   return (
@@ -37,6 +40,8 @@ const TodosTalleres = () => {
           ya hicieron mucho antes que yo este trabajo, y para confiar hoy en las
           personas que serán mis acompañantes.
         </p>
+
+        <img className="w-full object-cover" src={img01} alt="baby foots" />
 
         <h2 className="font-bold text-2xl my-10">
           Taller de Preparación al Post- Parto
@@ -86,7 +91,16 @@ const TodosTalleres = () => {
           <li className="pl-4">Relación de pareja</li>
         </ul>
 
-        <h3 className="font-bold text-2xl my-10">Preparación al Parto</h3>
+        <PriceBox
+          title="Preparacion al Post Parto"
+          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online"
+          name="Ana Maria Barrientos"
+          date="24 de Marzo 2020"
+        />
+
+        <h3 className="font-bold text-2xl my-10">
+          Taller de Preparación al Parto
+        </h3>
 
         <p className="mb-4">
           El taller de preparación al post parto está pensado en padres que
@@ -129,14 +143,12 @@ const TodosTalleres = () => {
           <li className="pl-4">Vínculo madre e hij@</li>
         </ul>
 
-        <ul className="mb-4 grid grid-cols-1 gap-4">
-          <li className="pl-4">Sistema: Plataforma zoom </li>
-          <li className="pl-4">Horario: designado según fecha </li>
-          <li className="pl-4">Duración real: 3 horas </li>
-          <li className="pl-4">Tiempo de preguntas: abierto </li>
-          <li className="pl-4">Valor: $10000 </li>
-          <li className="pl-4">Sorpresas y mucho más.</li>
-        </ul>
+        <PriceBox
+          title="Preparacion al Post Parto"
+          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online"
+          name="Ana Maria Barrientos"
+          date="24 de Marzo 2020"
+        />
       </div>
     </Layout>
   )
