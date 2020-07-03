@@ -2,7 +2,16 @@ import React from "react"
 
 import anita from "../assets/anita_sq.jpg"
 
-const PriceBox = ({ iconText, title, body, name, date, img, btnText }) => {
+const PriceBox = ({
+  iconText,
+  title,
+  body,
+  name,
+  date,
+  img,
+  btnText,
+  btnLink,
+}) => {
   const bgStyle = {
     backgroundImage: `url(${img})`,
   }
@@ -43,7 +52,7 @@ const PriceBox = ({ iconText, title, body, name, date, img, btnText }) => {
           </div>
           <a
             className="bg-blue-500 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-dark hover:border-blue rounded"
-            href="https://wa.me/56992391139"
+            href={btnLink}
             target="_blank"
             rel="noopener noreferrer"
           >

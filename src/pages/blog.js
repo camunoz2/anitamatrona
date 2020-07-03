@@ -47,6 +47,7 @@ const Blog = () => {
                   ? post.thumbnail_url
                   : post.media_url
               }
+              btnLink={post.permalink}
             />
           )
         })}
