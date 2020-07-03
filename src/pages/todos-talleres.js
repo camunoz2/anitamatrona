@@ -94,7 +94,7 @@ const TodosTalleres = () => {
 
         <PriceBox
           title="Preparacion al Post Parto"
-          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online y el valor es de $15.000 por pareja y dura 3 hrs"
+          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online, el valor es de $15.000 por pareja y dura 3 hrs"
           name="Ana Maria Barrientos"
           date="24 de Marzo 2020"
           img={img01}
@@ -152,7 +152,7 @@ const TodosTalleres = () => {
 
         <PriceBox
           title="Preparacion al Post Parto"
-          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online y el valor es de $15.000 por pareja y dura 3 hrs"
+          body="Reserva tu cupo para ralizar este taller, recordar que la modalidad del taller es Online, el valor es de $15.000 por pareja y dura 3 hrs"
           name="Ana Maria Barrientos"
           date="24 de Marzo 2020"
           img={img02}
