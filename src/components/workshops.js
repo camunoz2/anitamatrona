@@ -42,8 +42,8 @@ const Workshops = () => {
           workshopStatus="Listo"
         />
         <WorkshopDate
-          name="Preparación al Post-Parto"
-          date="4 Jul"
+          name="Preparación al Parto"
+          date="11 Jul"
           workshopStatus="Se viene!"
         />
       </div>

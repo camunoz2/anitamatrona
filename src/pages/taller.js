@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 
 const Taller = () => {
   return (
-    <Layout headerTitle="Taller de preparacion al parto">
-      <div>Taller</div>
+    <Layout headerTitle="Proxiamente">
+      <div>...</div>
     </Layout>
   )
 }

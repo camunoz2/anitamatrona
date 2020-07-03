@@ -27,6 +27,19 @@ const Index = () => {
   return (
     <>
       <Layout showImage={true} headerTitle="Hola">
+        <div className="flex items-center justify-center">
+          <svg
+            fill="#a842a5"
+            width="50"
+            height="50"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 24 24"
+          >
+            <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
+          </svg>
+        </div>
         <About />
         <Services />
         <Workshops />
