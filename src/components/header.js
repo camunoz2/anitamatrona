@@ -3,7 +3,7 @@ import bg from "../assets/bg.png"
 
 const Header = ({ title, showImage }) => {
   return (
-    <div className="flex flex-col items-center p-16">
+    <div className="flex flex-col items-center p-4 md:p-16">
       <img
         className={`${showImage ? "" : "hidden"}`}
         src={bg}

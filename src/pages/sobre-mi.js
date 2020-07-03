@@ -7,10 +7,10 @@ const SobreMi = () => {
 
   return (
     <Layout showImage={false} headerTitle="Sobre Mi">
-      <div className="overflow-hidden w-1/2 mx-auto">
+      <div className="overflow-hidden w-full md:w-1/2 mx-auto">
         <img src={image} alt="Sobre Mi" />
       </div>
-      <div className="text-md md:text-xl mt-32 w-3/4 mx-auto">
+      <div className="text-md md:text-xl mt-4 md:mt-32 w-3/4 mx-auto">
         <Paragraph>
           Soy Ana María Barrientos, me gusta que me digan Anita. Soy madre de
           dos hijos increíbles, Nicolás y Francisca, compañera de Cristian y
