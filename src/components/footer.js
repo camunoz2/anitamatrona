@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="py-10 custom-gradient px-4">
       <p className="text-center text-gray-200 text-2xl">
-        También realizo atención online por mi
+        También realizo atención online a través de mi
         <span className="text-xl font-extrabold bg-blue-500 px-2 py-1">
           <a
             href="http://www.facebook.com/matronaanita"
@@ -14,7 +14,7 @@ const Footer = () => {
             facebook
           </a>
         </span>
-        o por
+        ,
         <span className="text-xl font-extrabold bg-green-500 px-2 py-1">
           <a
             href="https://wa.me/56992391139"
@@ -24,7 +24,7 @@ const Footer = () => {
             whatsapp
           </a>
         </span>
-        , o por
+        , y/o
         <span className="text-xl font-extrabold bg-purple-500 px-2 py-1">
           <a
             href="http://www.instagram.com/anitarukakuyen"
@@ -34,7 +34,7 @@ const Footer = () => {
             instagram
           </a>
         </span>
-        donde me pueden escribir y compartir experiencias.
+        . Allí me puedes escribir y compartir experiencias.
       </p>
     </div>
   )

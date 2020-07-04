@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import MenuItems from "./menu-items"
 
 import logo from "../assets/logo.png"
-import HamburgerIcon from "../components/hamburger-icon"
 import { Link } from "gatsby"
 
 const Navbar = () => {
@@ -24,8 +23,13 @@ const Navbar = () => {
         </button>
       )}
       <MenuItems open={open} setOpen={setOpen} />
-      <button className="p-2 sm:hidden" onClick={() => setOpen(true)}>
-        <HamburgerIcon />
+      <button
+        className="flex flex-col p-4 sm:hidden rounded-full bg-purple-500"
+        onClick={() => setOpen(true)}
+      >
+        <div className="w-8 h-1 bg-purple-800 my-1"></div>
+        <div className="w-8 h-1 bg-purple-800 my-1"></div>
+        <div className="w-8 h-1 bg-purple-800 my-1"></div>
       </button>
     </nav>
   )
