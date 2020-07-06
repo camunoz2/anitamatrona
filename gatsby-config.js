@@ -14,6 +14,18 @@ module.exports = {
     image: "/images/site_image.png",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Anita Matrona`,
+        short_name: `Anitamatrona`,
+        start_url: `/`,
+        background_color: `#DDDBDC`,
+        theme_color: `#A842A5`,
+        display: `standalone`,
+        icon: `static/icon.png`,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
