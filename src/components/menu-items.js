@@ -12,7 +12,6 @@ const MenuIems = ({ open, setOpen }) => {
               <MenuItem text="Blog" linkTo="/blog" />
               <MenuItem text="Sobre Mi" linkTo="/sobre-mi" />
               <MenuItem text="Talleres" linkTo="/todos-talleres" />
-              <MenuItem text="Proximo Taller" linkTo="/taller" />
               <a
                 href="https://wa.me/56992391139"
                 className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline"
@@ -28,7 +27,6 @@ const MenuIems = ({ open, setOpen }) => {
           <MenuItem text="Blog" linkTo="/blog" />
           <MenuItem text="Sobre Mi" linkTo="/sobre-mi" />
           <MenuItem text="Talleres" linkTo="/todos-talleres" />
-          <MenuItem text="Proximo Taller" linkTo="/taller" />
           <a
             href="https://wa.me/56992391139"
             className="ml-2 uppercase px-2 py-1 rounded shadow-xl custom-gradient text-white font-hairline"

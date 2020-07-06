@@ -38,12 +38,12 @@ const PriceBox = ({
           <div className="text-black font-bold text-xl mb-2">{title}</div>
           <p className="text-grey-darker text-base">{body}</p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="flex">
             <img
-              className="w-10 h-10 rounded-full mr-4"
+              className="w-10 h-10 rounded-full mr-4 mb-4 md:mb-0"
               src={anita}
-              alt="Avatar of Jonathan Reinink"
+              alt="Avatar de Anita Barrientos"
             />
             <div className="text-sm">
               <p className="text-black leading-none">{name}</p>

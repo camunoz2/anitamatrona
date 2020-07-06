@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import About from "../components/about"
@@ -12,6 +13,14 @@ import { motion } from "framer-motion"
 const Index = () => {
   const gatsbyInstaPostData = useStaticQuery(graphql`
     {
+      site {
+        siteMetadata {
+          baseUrl
+          title
+          description
+          image
+        }
+      }
       post {
         dataQuery {
           caption
@@ -25,9 +34,25 @@ const Index = () => {
   const lastPostCaption = gatsbyInstaPostData.post.dataQuery[0].caption
   const lastPostImg = gatsbyInstaPostData.post.dataQuery[0].media_url
   const permalink = gatsbyInstaPostData.post.dataQuery[0].permalink
+  const metadata = gatsbyInstaPostData.site.siteMetadata
 
   return (
     <>
+      <Helmet>
+        <title>{metadata.title}</title>
+        <link rel="canonical" href={metadata.baseUrl} />
+        <meta name="description" content={metadata.description} />
+        {metadata.image && <meta name="image" content={metadata.image} />}
+
+        <meta property="og:url" content={metadata.url} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        {metadata.image && (
+          <meta property="og:image" content={metadata.image} />
+        )}
+      </Helmet>
+
       <Layout showImage={true} headerTitle="Hola">
         <div className="flex items-center justify-center">
           <motion.svg
