@@ -12,7 +12,6 @@ const Blog = () => {
           media_url
           id
           permalink
-          thumbnail_url
           media_type
           timestamp(formatString: "DD MMMM YYYY", locale: "es-CL")
         }
