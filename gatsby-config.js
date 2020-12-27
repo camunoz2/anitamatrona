@@ -45,5 +45,19 @@ module.exports = {
         trackingId: "UA-67985927-4",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "AW-977450233", // Google Ads / Adwords / AW
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+      }
+    }
   ],
 }
