@@ -30,9 +30,6 @@ const Consulta = () => {
                     <a href="https://www.instagram.com/anitamatrona/">
                         <li className="mr-6">Instagram</li>
                     </a>
-                    <Link to="/todos-talleres">
-                        <li className="mr-6">Talleres</li>
-                    </Link>
                     <a href="https://wa.me/56992391139">
                         <li className="mr-6">Contacto</li>
                     </a>
@@ -50,9 +47,6 @@ const Consulta = () => {
                         <a href="https://www.instagram.com/anitamatrona/">
                             <li className="text-5xl font-black">Instagram</li>
                         </a>
-                        <Link to="/todos-talleres">
-                            <li className="text-5xl font-black">Talleres</li>
-                        </Link>
                         <a href="https://wa.me/56992391139">
                             <li className="text-5xl font-black">Contacto</li>
                         </a>
@@ -70,7 +64,7 @@ const Consulta = () => {
                     <img className="h-48" src={imgProfile} alt="imagen perfil anita"/>
                     <p className="text-2xl md:text-4xl text-white text-center md:w-1/2">No sólo una consulta clínica de matrona, <span className="italic">también</span> <span className="font-black">el espacio que nosotras necesitamos.</span></p>
                     <div className="flex flex-col items-center md:flex-row my-12">
-                        <a href="https://wa.me/56992391139" className="px-4 py-2 my-4 md:my-0 md:mr-16" style={{backgroundColor:"#ECD444"}}>Reservar ahora</a>
+                        <a href="https://matrona.setmore.com/" className="px-4 py-2 my-4 md:my-0 md:mr-16" style={{backgroundColor:"#ECD444"}}>Reservar ahora</a>
                         <a href="https://matrona.setmore.com/" className="px-4 py-2" style={{border:"1px solid #ECD444", color:"#ecd444"}}>Agenda digital</a>
                     </div>
 
