@@ -9,11 +9,11 @@ import imgInsta from "../assets/_landing/ig_logo.png"
 import imgFacebook from "../assets/_landing/fb_logo.png"
 import {MenuToggle} from "../components/menu-toggle"
 
+
 const Consulta = () => {
 
-
     const [isOpen, toggleOpen] = useCycle(false, true);
-
+    const setmoreURL = "https://matrona.setmore.com/"
 
 
     return (
@@ -23,9 +23,6 @@ const Consulta = () => {
                 <ul className="hidden md:flex md:my-4">
                     <Link to="/">
                         <li className="mr-6">Inicio</li>
-                    </Link>
-                    <Link to="/todos-talleres">
-                        <li className="mr-6">Servicios</li>
                     </Link>
                     <a href="https://www.instagram.com/anitamatrona/">
                         <li className="mr-6">Instagram</li>
@@ -40,9 +37,6 @@ const Consulta = () => {
                     <ul className="flex flex-col justify-between items-center py-56">
                         <Link to="/">
                             <li className="text-5xl font-black">Inicio</li>
-                        </Link>
-                        <Link to="/todos-talleres">
-                            <li className="text-5xl font-black">Servicios</li>
                         </Link>
                         <a href="https://www.instagram.com/anitamatrona/">
                             <li className="text-5xl font-black">Instagram</li>
@@ -64,8 +58,8 @@ const Consulta = () => {
                     <img className="h-48" src={imgProfile} alt="imagen perfil anita"/>
                     <p className="text-2xl md:text-4xl text-white text-center md:w-1/2">No sólo una consulta clínica de matrona, <span className="italic">también</span> <span className="font-black">el espacio que nosotras necesitamos.</span></p>
                     <div className="flex flex-col items-center md:flex-row my-12">
-                        <a href="https://matrona.setmore.com/" className="px-4 py-2 my-4 md:my-0 md:mr-16" style={{backgroundColor:"#ECD444"}}>Reservar ahora</a>
-                        <a href="https://matrona.setmore.com/" className="px-4 py-2" style={{border:"1px solid #ECD444", color:"#ecd444"}}>Agenda digital</a>
+                        <a href={setmoreURL} className="px-4 py-2 my-4 md:my-0 md:mr-16" style={{backgroundColor:"#ECD444"}}>Reservar ahora</a>
+                        <a href={setmoreURL} className="px-4 py-2" style={{border:"1px solid #ECD444", color:"#ecd444"}}>Agenda digital</a>
                     </div>
 
                 </div>
