@@ -7,7 +7,7 @@ const Footer = () => {
         También realizo atención online a través de mi
         <span className="text-xl font-extrabold bg-blue-500 px-2 py-1">
           <a
-            href="http://www.facebook.com/matronaanita"
+            href="http://www.facebook.com/anitamatrona"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ const Footer = () => {
         , y/o
         <span className="text-xl font-extrabold bg-purple-500 px-2 py-1">
           <a
-            href="http://www.instagram.com/anitarukakuyen"
+            href="http://www.instagram.com/anitamatrona"
             target="_blank"
             rel="noopener noreferrer"
           >
